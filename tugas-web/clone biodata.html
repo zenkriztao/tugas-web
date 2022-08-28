@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Biodata Muhammad Rizki Ramadhan</title>
+    <link rel="shortcut icon" href="http://muhammadrizki.herokuapp.com/favicon.ico">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins&family=Inter:wght@400;500' rel='stylesheet'>
+    <style>
+        /*--------------------------------------------------------------
+# CSS config for this page
+--------------------------------------------------------------*/
+        
+        body {
+            font-family: "Poppins", sans-serif;
+            color: #272829;
+        }
+        
+        a {
+            color: #20aaeb;
+        }
+        
+        a:hover {
+            color: #1295d1;
+            text-decoration: none;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Inter", sans-serif;
+        }
+        
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 300px;
+            transition: all ease-in-out 0.5s;
+            z-index: 9997;
+            transition: all 0.5s;
+            padding: 0px;
+            background: #272866;
+            overflow-y: auto;
+        }
+        
+        #header .profile h1 {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+            -moz-text-align-last: center;
+            text-align-last: center;
+            font-family: "Inter", sans-serif;
+        }
+        
+        #main {
+            margin-left: 300px;
+        }
+        
+        @media (max-width: 1199px) {
+            #header {
+                left: -300px;
+            }
+            #main {
+                margin-left: 0;
+            }
+        }
+        /*--------------------------------------------------------------
+# Navigation main menu
+--------------------------------------------------------------*/
+        
+        .nav-menu {
+            padding-top: 20px;
+        }
+        
+        .nav-menu * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .nav-menu>ul>li {
+            position: relative;
+            white-space: nowrap;
+        }
+        
+        .nav-menu a {
+            display: flex;
+            align-items: center;
+            color: #ffff;
+            padding: 11px 15px;
+            margin-bottom: 8px;
+            transition: 0.3s;
+            font-size: 15px;
+        }
+        
+        .nav-menu a i {
+            font-size: 24px;
+            padding-right: 8px;
+            color: #6f7180;
+        }
+        
+        .nav-menu a:hover,
+        .nav-menu .active>a,
+        .nav-menu li:hover>a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .nav-menu a:hover i,
+        .nav-menu .active>a i,
+        .nav-menu li:hover>a i {
+            color: #149ddd;
+        }
+        
+        #hero .hero-container {
+            position: relative;
+            z-index: 2;
+            min-width: 300px;
+        }
+        
+        #hero h1 {
+            margin: 0 0 10px 0;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 56px;
+            color: #fff;
+        }
+        
+        #hero p {
+            color: #fff;
+            margin-bottom: 50px;
+            font-size: 26px;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        #hero p span {
+            color: #fff;
+            padding-bottom: 4px;
+            letter-spacing: 1px;
+            border-bottom: 3px solid #149ddd;
+        }
+        
+        @media (min-width: 1024px) {
+            #hero {
+                background-attachment: fixed;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            #hero h1 {
+                font-size: 28px;
+                line-height: 36px;
+            }
+            #hero h2 {
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 30px;
+            }
+        }
+        
+        section {
+            padding: 60px 0;
+            overflow: hidden;
+        }
+        
+        .section-bg {
+            background: #dfe6f5;
+        }
+        
+        .section-title {
+            padding-bottom: 30px;
+        }
+        
+        .section-title h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            position: relative;
+            color: #173b6c;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #149ddd;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .section-title p {
+            margin-bottom: 0;
+        }
+        
+        .about .content ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .about .content ul li {
+            padding-bottom: 10px;
+        }
+        
+        .about .content ul i {
+            font-size: 20px;
+            padding-right: 2px;
+            color: #149ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="d-flex flex-column">
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home/"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                    <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+                    <li><a href="#"><i class="bx bx-server"></i> Projects</a></li>
+                    <li><a href="#portfolio"><i class="bx bx-book-content"></i> Certificates</a></li>
+
+                </ul>
+            </nav </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ======= Hero Section ======= -->
+
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Personal Information</h2>
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="row">
+
+                                <div class="col s12 m10">
+
+                                </div>
+                            </div>
+                            <ul>
+                                <li><i class="icofont-rounded-right"></i> <strong>Nama :</strong>
+                                    <h2> Muhammad Rizki Ramadhan</a>
+                                </li>
+                                <li><i class="icofont-rounded-right"></i> <strong>Lahir : Palembang</strong> </li>
+                                <li><i class="icofont-rounded-right"></i> <strong>Agama : Islam</strong> </li>
+                                <li><i class="icofont-rounded-right"></i> <strong>Gender : Laki-laki</strong> </li>
+                                <ul>
+                                    <li><i class="icofont-rounded-right"></i> <strong>LinkedIn :</strong> <a href="https://linkedin.com/in/muhammadrzki/">
+                                            linkedin.com/in/muhammadrzki</a></li>
+                                    <li><i class="icofont-rounded-right"></i>
+                                        <strong>GitHub :</strong> <a href="https://github.com/zenkriztao"> github.com/zenkriztao</a> </li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Personal website :</strong> <a href="http://muhammadrizki.herokuapp.com/"> muhammadrizki.herokuapp.com/</a>
+                                    </li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Codeforces :</strong> <a href="https://codeforces.com/profile/kriuztao"> codeforces.com/profile/kriuztao </a>
+                                    </li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Hackerrank :</strong> <a href="https://www.hackerrank.com/muhammadrzkidev"> hackerrank.com/muhammadrzkidev </a>
+                                    </li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Codechef :</strong> <a href="https://codechef.com/muhammadrizki"> codechef.com/kriuztao </a>
+                                    </li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Email :</strong> <a href="mailto:muhammadrzkidev@gmail.com"> muhammadrzkidev@gmail.com </a>
+                                    </li>
+                                    <li><i class="icofont-rounded-right"></i> <strong>Dicoding :</strong> <a href="https://dicoding.com/users/nrp_saotome"> dicoding.com/users/nrp_saotome </a>
+                                    </li>
+
+                                    <p>
+                                        Become 10X Engineer An Indonesia Developer coder and designer, Frontend developer web and mobiled developer passionate about ReactJS, NextJS, React-native, Little Bit Backend Developer NodeJS, Firebase, C++, Tailwind UI, and much more,✨ Hai, my name is
+                                        Muhammad Rizki Ramadhan, you can call me Rizki or Han, Currently, i am a student in Universitas Sriwijaya from Software Engineering major. Why I created this website is because of my enthusiasm for React, JavaScript,
+                                        & frontend and backend development in general, I like to write a few small lines of code because of my love for the developer world which is always updated with the latest technology changes and stack frameworks.
+                                        My goal in life is to become a useful software engineer for many people in all walks of life
+                                    </p>
+                                </ul>
+                        </div>
+
+                    </div>
+
+                    <section id="experience" class="experience">
+                        <div class="container">
+                            <div class="section-title">
+                                <h2>Experience</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12" data-aos="fade-up">
+                                    <div class="section-title">
+
+                                        <div class="card">
+                                            <div class="card-content">
+
+                                                <ul>
+                                                    <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+                                                        <h4 style="text-align:left;"><a href="https://neurasystem.id/" target="_blank" style="color:#00380d"><b>CO-Founder
+                                                                    Neuronsystem.id</b></a><br> </h4>
+                                                        <h5 style="text-align:left;">Neura system is the First Education Startup in Indonesia that implements a live class (Tanya Tutor) that integrates directly with Neura's tutor through access to the zoom platform. This platform
+                                                            is Click me to support the younger generation in Indonesia to achieve their dreams in higher education, service and other domestic exams</h5>
+                                                        <p style="text-align:left;color:rgb(255, 0, 0)"><em>Jan 2020 –
+                                                                Present </em></p>
+                                                    </div>
+
+                                                </ul>
+                                            </div>
+                                            <section id="Education" class="Education section-bg">
+                                                <div class="container">
+
+                                                    <div class="section-title">
+                                                        <h2>Education</h2>
+                                                    </div>
+
+                                                    <div class="row project-content">
+
+                                                        <div class="col-lg-12" data-aos="fade-up">
+
+                                                            <div class="card">
+                                                                <div class="card-content">
+
+
+                                                                    <ul>
+                                                                        <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+                                                                            <h4 style="text-align:left;"><a href="https://unsri.ac.id/" target="_blank" style="color:#00380d"><b>SRIWIJAYA
+                                                                                        UNIVERSITY</b></a><br> </h4>
+                                                                            <h5 style="text-align:left;">Major in Informatics Engineering/Computer Science
+                                                                            </h5>
+                                                                            <p style="text-align:left;color:rgb(255, 0, 0)">
+                                                                                <em>2021 - 2025 </em></p>
+
+                                                                        </div>
+
+                                                                    </ul>
+                                                                </div>
+
+                                                                <div class="card">
+                                                                    <div class="card-content">
+                                                                        <div class="row">
+
+                                                                            <!-- <div class="col s12 m10"> -->
+                                                                            <div class="col s12 m10">
+
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <ul>
+                                                                            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
+                                                                                <h4 style="text-align:left;"><a href="https://smanegeri10palembang.sch.id/" target="_blank" style="color:#00380d"><b>SMAN 10
+                                                                                            PALEMBANG</b></a><br> </h4>
+                                                                            </div>
+
+                                                                        </ul>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </section>
+                    </section>
+
+                    <!DOCTYPE html>
+
+
+                    <section id="#" class="#">
+                        <div class="container">
+
+                            <div class="section-title">
+                                <h2>Projects</h2>
+
+
+                                <div class="row">
+                                    <h4 class="section-title"><a href="https://play.google.com/store/apps/details?id=com.ryusan" target="_blank">Neuron System Application Android</a></h4>
+                                    <p class="description">Tech Stack: JavaScript, React Native, Redux, Yarn, Code push, Jest.
+                                        <a href="https://play.google.com/store/apps/details?id=com.ryusan" target="_blank">Click me.
+                                        </a> </p>
+                                </div>
+                                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                                    <h4 class="section-title"><a href="http://www.neurasystem.id/" target="_blank">Neuron System
+                                            Website</a></h4>
+                                    <p class="description"> Tech Stack: JavaScript, NextJS, NodeJS, webpack, Hosting
+                                        <a href="http://www.neurasystem.id/" target="_blank">Click me.
+                                        </a>
+                                    </p>
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                                    <h4 class="section-title"><a href="http://www.portal.neurasystem.id/" target="_blank">Neuron
+                                            System Tryout Online</a></h4>
+                                    <p class="description"> Tech Stack: JavaScript, ReactJS
+                                        <a href="http://www.portal.neurasystem.id/" target="_blank">Click me.
+                                        </a>
+                                    </p>
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                                    <h4 class="section-title"><a href="https://m-edukasi.kemdikbud.go.id/medukasi/?m1=komunitas&produksi=2019&kd=ME19KOM26" target="_blank">Edukasi Budaya Application Android</a></h4>
+                                    <p class="description"> Tech Stack: JavaScript, React Native, Redux, Yarn.<a href="https://m-edukasi.kemdikbud.go.id/medukasi/?m1=komunitas&produksi=2019&kd=ME19KOM26" target="_blank">Click me.
+                                        </a> </p>
+                                    </p>
+                                </div>
+                                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                                    <h4 class="section-title"><a href="https://utbk-ryusan.herokuapp.com/#/beranda" target="_blank">Ryusan Website TO</a></h4>
+                                    <p class="description">Tech Stack: JavaScript, ReactJS, Herokuapp. <a href="https://utbk-ryusan.herokuapp.com/#/beranda" target="_blank">Click me.
+                                        </a></p>
+                                </div>
+                                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                                    <h4 class="section-title"><a href="https://drive.google.com/file/d/1r6LHNulinBeX-DSIqAs2_gtKI6DjHQQF/view" target="_blank">Go Quran Cloud Application</a></h4>
+                                    <p class="description">Tech Stack: JavaScript, React Native, Redux, Yarn <a href="https://drive.google.com/file/d/1r6LHNulinBeX-DSIqAs2_gtKI6DjHQQF/view" target="_blank">Click me.
+                                        </a> </p>
+                                </div>
+                                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                                    <h4 class="section-title"><a href="https://muhammadrizki.herokuapp.com/" target="_blank">Portfolio Website</a></h4>
+                                    <p class="description">Tech Stack: JavaScript, ReactJS, Herokuapp <a href="https://muhammadrizki.herokuapp.com/" target="_blank">Click me.
+                                        </a> </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+    </main>
+</body>
+
+</html>
